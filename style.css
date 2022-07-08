@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  background-color: black;
+}
+
+.container{
+  height: 300px;
+  width: 500px;
+  border-radius: 10px;
+  margin-top: 13%;
+  margin-left: 37%;
+  box-shadow: 0 5px 10px  #DF7861;
+
+}
+
+.header{
+    background-color: #DF7861;
+    text-align: center;
+    height: 100px;
+    width: 500px;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+    color: #ffff;
+    padding-top: 40px;
+}
+
+.input{
+  text-align: center;
+}
+
+input{
+  background-color: #ffff;
+  height: 45px;
+  width: 300px;
+  border-radius: 10px;
+  margin-top: 40px;
+  text-align: center;
+  color: #DF7861;
+  border-width: 0;
+  font-size: 18px;
+}
+
+.buttons{
+  margin-top: 40px;
+  text-align: center;
+
+}
+
+.btn1{
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  color: #DF7861;
+  cursor: pointer;
+}
+
+.btn2{
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  color: #DF7861;
+  cursor: pointer;
+}
+
+@media (max-width: 550px){
+  .container{
+    height: 280px;
+    width: 350px;
+    margin-left: 250px;
+    margin-top: 50%;
+  }
+  .header{
+    height: 100px;
+    width: 350px;
+    padding-top: 30px;
+    font-size: 13px;
+  }
+  input{
+    height:40px;
+    width: 270px;
+  }
+  .btn1{
+    height: 30px;
+    width: 150px;
+  }
+  .btn2{
+    height: 30px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 1300px){
+  .container{
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
