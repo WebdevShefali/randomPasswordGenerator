@@ -1,108 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-body{
+body {
   overflow: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 100vh;
   background-color: black;
 }
-
-.container{
+.container {
   height: 300px;
   width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 10px #df7861;
+}
+.container,
+input,
+.btn1,
+.btn2 {
   border-radius: 10px;
-  margin-top: 13%;
-  margin-left: 37%;
-  box-shadow: 0 5px 10px  #DF7861;
-
 }
-
-.header{
-    background-color: #DF7861;
-    text-align: center;
-    height: 100px;
-    width: 500px;
-    border-top-left-radius:10px;
-    border-top-right-radius: 10px;
-    color: #ffff;
-    padding-top: 40px;
+.header {
+  background-color: #df7861;
+  height: 100px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #ffff;
+  padding-top: 40px;
 }
-
-.input{
+.input,
+.header,
+input,
+.buttons {
   text-align: center;
 }
-
-input{
+input {
   background-color: #ffff;
   height: 45px;
   width: 300px;
-  border-radius: 10px;
-  margin-top: 40px;
-  text-align: center;
-  color: #DF7861;
   border-width: 0;
   font-size: 18px;
+  outline: none;
+  border: none;
 }
-
-.buttons{
+input,
+.btn1,
+.btn2 {
+  color: #df7861;
+}
+.buttons,
+input {
   margin-top: 40px;
-  text-align: center;
-
 }
-
-.btn1{
+.btn1,
+.btn2 {
   height: 40px;
   width: 200px;
-  border-radius: 10px;
-  color: #DF7861;
   cursor: pointer;
 }
-
-.btn2{
-  height: 40px;
-  width: 150px;
-  border-radius: 10px;
-  color: #DF7861;
-  cursor: pointer;
-}
-
-@media (max-width: 550px){
-  .container{
-    height: 280px;
+@media only screen and (max-width: 425px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+  .container {
     width: 350px;
-    margin-left: 250px;
-    margin-top: 50%;
-  }
-  .header{
-    height: 100px;
-    width: 350px;
-    padding-top: 30px;
-    font-size: 13px;
-  }
-  input{
-    height:40px;
-    width: 270px;
-  }
-  .btn1{
-    height: 30px;
-    width: 150px;
-  }
-  .btn2{
-    height: 30px;
-    width: 100px;
-  }
-}
-
-@media (max-width: 1300px){
-  .container{
-    margin-top: 50%;
-    margin-left: 50%;
-    transform: translate(-50%, -50%);
+    height: 350px;
   }
 }

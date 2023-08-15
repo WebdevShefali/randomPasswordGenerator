@@ -1,5 +1,3 @@
-
-
 function genPassword(){
   let chars = "0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM!@#$%^&*()?";
   var passwordLength = 8;
